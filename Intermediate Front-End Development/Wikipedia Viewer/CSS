@@ -1,0 +1,97 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
+body {
+height: 100vh; 
+background-color: #FFC600;
+}
+
+label {
+  color: #000000;
+  font-size: 28px;
+  font-family: lobster;
+  margin-top: 20px;
+}
+
+.form-control {
+  border-radius: 100px;
+}
+
+p {
+  color: #000000;
+  font-family: Lobster;
+  font-size: 28px;
+  margin-top: 15px;
+}
+
+.btn {
+  padding-right: 40px;
+  padding-left: 40px;
+  border-radius: 100px;
+  border-color: #000000;
+  border-width: 1px;
+  font-size: 20px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.title {
+  color: #000000;
+  font-family: lato;
+  padding-top: 15px;
+  padding-left: 15px
+}
+
+.snippet {
+  color: #000000;
+  font-size: 20px;
+  font-family: lato;
+  margin-top: 2px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+}
+
+.results:hover {
+  background-color: #FFC600;
+}
+
+.resultset:hover {
+  background-color: rgba(255,255,255, 0.3);
+  text-decoration: none !important;
+}
+
+a:hover, a:visited {
+  text-decoration: none !important;
+}
+ a:active {
+  text-decoration: none !important;
+    background-color: #FFC600 !important;
+}
+
+a:focus{
+  text-decoration: none !important;
+    background-color: #FFC600 !important; 
+}
+.resultset:visited {
+  background-color: #FFC600 !important; 
+  text-decoration: none !important;
+}
+
+.resultset:active {
+  background-color: #FFC600 !important;
+  text-decoration: none !important; 
+}
+
+h2 {
+  margin-bottom: 0px;
+}
+
+#clear {
+ display: block;
+ position: absolute;
+ top: 72%;
+ right: 0;
+ font-size: 20px;
+ width: 60px;
+ height: 40px;
+ cursor: pointer;
+}
