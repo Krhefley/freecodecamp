@@ -1,5 +1,5 @@
 
-<bold>Requirements:</bold>
+Requirements:
 Reverse the provided string.
 You may need to turn the string into an array before you can reverse it.
 Your result must be a string.
@@ -10,7 +10,7 @@ reverseString("Howdy") should become "ydwoH".
 reverseString("Greetings from Earth") should return "htraE morf sgniteerG".
 
 
-<bold>My Code:</bold> 
+My Code: 
 
 function reverseString(str) {
   return str.split("").reverse().join("");
