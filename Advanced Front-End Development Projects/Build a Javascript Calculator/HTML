@@ -1,0 +1,84 @@
+<div class="row">  
+  <div class="small-12 small-centered  medium-6  medium-centered large-4 columns large-centered text-center">
+  <div class="box">
+<form name="calculator">
+<input type="text" name="answer" class="display">   
+<div class="row">
+  <div class="small-3 medium-3 large-3 columns">
+      <input type="button" value="C" onclick="calculator.answer.value = ''" class="calc-button"> 
+      </input><!--button-->
+  </div>
+  <div class="small-3 medium-3 large-3 columns">
+      <input type="button" value="^" onclick="calculator.answer.value += '**'"  class="calc-button"> 
+      </input><!--button-->
+  </div><!--columns-->
+   <div class="small-3 medium-3 large-3 columns">
+       <input type="button" value="÷" onclick="calculator.answer.value += '/'" class="calc-button"> 
+      </input><!--button-->
+  </div><!--columns-->
+   <div class="small-3 medium-3 large-3 columns ">
+      <input type="button" value="*" onclick="calculator.answer.value +='*'" class="calc-button"> 
+      </input><!--button-->
+     </div><!--columns-->
+    </div><!--row-->
+    <div class="row">
+  <div class="small-3 medium-3 large-3 columns">
+     <input type="button" value="9" onclick="calculator.answer.value +='9'" class="calc-button">
+     </input><!--button-->
+  </div>
+  <div class="small-3 medium-3 large-3 columns">
+    <input type="button" value="8" onclick="calculator.answer.value +='8'" class="calc-button"> </input><!--button-->
+  </div><!--columns-->
+   <div class="small-3 medium-3 large-3 columns">
+       <input type="button" value="7" onclick="calculator.answer.value +='7'" class="calc-button"> </input><!--button-->
+  </div><!--columns-->
+   <div class="small-3 medium-3 large-3 columns">
+      <input type="button" value="-" onclick="calculator.answer.value +='-'" class="calc-button"> </input><!--button-->
+     </div><!--columns-->
+    </div><!--row-->
+    <div class="row">
+  <div class="small-3 medium-3 large-3 columns">
+       <input type="button" value="6" onclick="calculator.answer.value +='6'" class="calc-button"> </input><!--button-->
+  </div>
+  <div class="small-3 medium-3 large-3 columns">
+     <input type="button" value="5" onclick="calculator.answer.value +='5'" class="calc-button"> </input><!--button-->
+  </div><!--columns-->
+   <div class="small-3 medium-3 large-3 columns">
+    <input type="button" value="4" onclick="calculator.answer.value +='4'" class="calc-button"> </input><!--button-->
+  </div><!--columns-->
+   <div class="small-3 medium-3 large-3 columns">
+     <input type="button" value="+" onclick="calculator.answer.value +='+'" class="calc-button"> </input><!--button-->
+     </div><!--columns-->
+    </div><!--row-->
+ <div class="row">
+  <div class="small-3 medium-3 large-3 columns">
+       <input type="button" value="3" onclick="calculator.answer.value +='3'" class="calc-button"> </input><!--button-->
+  </div>
+  <div class="small-3 medium-3 large-3 columns">
+     <input type="button" value="2" onclick="calculator.answer.value +='2'" class="calc-button"> </input><!--button-->
+  </div><!--columns-->
+   <div class="small-3 medium-3 large-3 columns">
+    <input type="button" value="1" onclick="calculator.answer.value +='1'" class="calc-button"> </input><!--button-->
+  </div><!--columns-->
+   <div class="small-3 medium-3 large-3 columns">
+     <input type="button" value="√" onclick="calculator.answer.value = Math.sqrt(eval(calculator.answer.value))" class="calc-button"> </input><!--button-->
+     </div><!--columns-->
+    </div><!--row-->
+<div class="row">
+  <div class="small-3 medium-3 large-3 columns">
+     <input type="button" value="0" onclick="calculator.answer.value += '0'" class="calc-button"> 
+      </input><!--button-->
+  </div>
+  <div class="small-3 medium-3 large-3 columns">
+      <input type="button" value="." onclick="calculator.answer.value += '.'" class="calc-button"> 
+      </input><!--button-->
+  </div><!--columns-->
+   <div class="small-5 medium-5 large-5 columns ">
+      <input type="button" value="=" onclick="calculator.answer.value = eval(calculator.answer.value)" id="equals" class="calc-button"> 
+      </input><!--button-->
+  </div><!--columns-->
+   <div class="small-1 medium-1 large-1 columns">
+  </div><!--columns-->
+    </div><!--row-->
+    </form>
+</div><!--box-->
