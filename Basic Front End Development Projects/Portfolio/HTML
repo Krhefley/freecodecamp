@@ -1,0 +1,102 @@
+<div class="container-fluid">
+<div class="hero-unit" style="background: url('http://s22.postimg.org/kkke3uswx/black_and_white_lights_abstract_curves.jpg') no-repeat center center;">
+<div class="row" id="start-scroll">
+  <div class="carousel-caption">
+   <h1 id="intro-text" class="text-center">Design & Development</h1>
+</div><!--carousel-caption--> 
+</div><!--hero-unit--> 
+  </div><!--container-fluid-->
+
+
+ <!--navigation bar-->
+<nav class="navbar navbar-default navbar-fixed-top" id="#global-nav">
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+         
+         <i class="fa fa-bars"></i>
+       	</button>
+                               
+ <a class="navbar-brand" href="http://codepen.io/Krhefley/full/ozBbpN/">Ricay Hefley</a>
+     <div class="collapse navbar-collapse" id="myNavbar">
+      	<ul class="nav navbar-nav navbar-right">
+        	<li><a href="#Projects"><i class="fa fa-code "></i>Projects</a></li>
+       		<li><a href="#Contact"><i class="fa fa-envelope-o"></i> Contact</a></li>
+      	</ul>
+   	</div> <!--collapse navbar-collapse-->    
+</nav>    
+
+<!--Projects Title-->
+<div="container-fluid">
+  <div class="row">
+ <h2 class="section-title text-center col-sm-12" id="Projects">Projects</h2>
+      <div id="#Projects"></div>
+  </div><!--columns-->
+  </div><!--row-->
+</div><!--container-fluid-->    			
+<!--Projects-->
+<div class="container-fluid">
+    <div class="row">	  				
+        <div class="col-sm-12 col-lg-4 portfolio-item"> 
+            <div class="thumbnail">
+                <a href="http://www.mandmmassagestudio.com" target="_blank">
+      				   <img src= "http://s10.postimg.org/t8ymtexrt/screencapture_mandmmassagestudio_1474817733198.jpg"                  class="img-responsive"/>
+                </a> 
+			</div><!--thumbnail-->		
+   		</div><!--columns-->
+      
+      
+         <div class="col-sm-12 col-lg-4">
+       		<div class="thumbnail">
+                <a href="https://thedesertgypsy.com" target="_blank">
+                    <img src="https://s13.postimg.org/4wwmcsd07/rsz_1screencapture_thedesertgypsy_1480280061864.png" class="img- responsive" alt="... "></img>
+                </a>
+            </div><!--thumbnail-->      
+        </div><!--columns-->
+  
+        <div class="col-sm-12 col-lg-4">
+       		<div class="thumbnail">
+                <a href="http://www.kiyik.co">
+                    <img src="https://s17.postimg.org/xr655hsv3/rsz_screencapture_kiyik_co_1480280740721.png" class="img- 
+                  responsive" alt="... "></img>
+                </a>
+            </div><!--thumbnail-->      
+        </div><!--columns-->
+     </div><!--row-->
+   </div><!--container-->
+ 
+
+<!--Contact-->
+<div class="container-fluid">
+    <div class="row" style="background-color:black;">
+             <h2 class="section-title text-center col-sm-12" id="Contact" style="padding-top: 10px;">Contact</h2>
+        </div><!--columns-->
+     </div><!--row-->
+ </div><!--container-fluid-->
+
+<div class="container-fluid">
+    <div class="row" style="background-color:black;">
+      <div class="col-sm- 12 col-md-4  text-center"> 
+         <a href="https://www.twitter.com/krhefley" target="_blank"><button type="button" class="btn"><i class="fa fa-twitter"></i> Twitter</button></a>
+             </div><!--columns-->
+
+        <div class="col-sm-12 col-md-4 text-center">  
+            <a href="https://www.freecodecamp.com/krhefley" target="_blank"><button type="button" class="btn"><i class="fa fa-fire"></i> Free Code Camp</button></a>
+         </div><!--columns-->
+
+
+        <div class="col-sm-12 col-md-4 text-center">
+          <button type="button" class="btn"><i class="fa fa-envelope-o"></i> Email</button>
+        </div><!--columns-->
+
+    </div><!--row-->
+</div><!--container-->
+
+<div class="container-fluid">
+<div class="row" style="background-color:black;">
+      <p class="footer-text text-center">Ricay Hefley <i class="fa fa-copyright"></i> All Rights Reserved 2016</p> 
+    </div><!--columns-->
+</div><!--row-->
+</div><!--container-fluid-->
+
+
+    
+ 
