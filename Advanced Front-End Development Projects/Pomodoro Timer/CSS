@@ -1,0 +1,95 @@
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC);
+
+body {
+background: #f85032; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #f85032 , #e73827); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #f85032 , #e73827); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */               
+}
+
+
+
+.inline {
+  display: inline-block;
+  
+}
+
+.btn {
+  color: white;
+  display:inline-block;
+  background-color: transparent;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.btn:focus,.btn:active {
+   outline: none !important;
+    color: green;
+}
+
+
+.btn:hover {
+  color: green;
+}
+
+h3 {
+font-family: 'Amatic SC';  
+font-size: 70px;
+color: #FFF;
+font-weight: bold;
+}
+
+p {
+  color:  #2e2e2e;
+  font-size: 50px;
+  font-family: 'Amatic SC';
+  font-weight: bold;
+}
+
+
+#start:hover {
+  cursor: pointer;
+}
+
+#start:focus {
+  outline: none;
+}
+
+#start {
+font-size: 50px;
+background-color: #0E8C3A;
+border-radius: 100px;
+border-color: white;
+color: white;
+padding-left: 75px;
+padding-right: 75px;
+font-family: 'Amatic SC';
+font-weight: bold;
+}
+
+
+.title {
+  font-size: 50px;
+  color:  #2e2e2e;
+}
+
+.timer {
+  font-size: 50px;
+}
+
+#workLength {
+  color: white;
+  font-size: 50px;
+  color: #FFF;
+}
+
+#breakLength {
+  color: white;
+  font-size: 50px;
+  color: #FFF;
+}
+
+.timer {
+  color: #FFF;
+  font-size: 50px;
+ 
+}
