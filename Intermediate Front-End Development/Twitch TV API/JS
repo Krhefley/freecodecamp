@@ -1,0 +1,43 @@
+$(function() {
+var url="https://cors-anywhere.herokuapp.com/https://wind-bow.gomix.me/twitch-api/";  
+var users = ["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas", "brunofin", "comster404"];
+  
+  
+//Call to API for each item in array 
+users.forEach(function (currentUser) {
+$.getJSON(url + "streams/" + currentUser, function(data) {
+if (data.stream != null) {
+ var userList = "<div class='row list active text-center'>" + "<li>" + "<a href='" + data.stream.channel.url + "' target='_blank'>"  + "<div class = 'col-sm-6 text-center'>" + " <img src=" + data.stream.channel.logo  + " class='logo' >" + "</a>" + "</div>" + "<h3 class='col-sm-6  text-center name'>" +  data.stream.channel.name + " is currently streaming " +  data.stream.game;
+  $('ul').append(userList);  
+} else {
+ $.getJSON(url + "users/" + currentUser, function(data) {
+if(data.name == undefined){
+  var unavailable = "<div class='row list unavailable text-center'>" + "<li class='inactive'>"+ "<div class ='col-sm-6 text-center'>" +  "<i class='fa fa-twitch fa-6'>" + "</i>"+ "</div>" +"<h3 class='col-sm-6  text-center name'>"+ currentUser +"'s channel is no longer available" +"</h3>"+"</li>" + "</div>";
+ $('ul').append(unavailable); 
+} else {
+users = "<div class='row list inactive text-center'>" + "<li>" + "<a href='https://www.twitch.tv/" + currentUser +  "' target='_blank'>" + "<div class ='col-sm-6 text-center'>" +"<img src=" + data.logo + " class='logo'>" + "</div>" + "</a>" +"<br>" + "<h3 class='col-sm-6 text-center name'>"  +"<span class='userName'>" +data.name + "</span>" +" is currently offline"+"</h3>"  + "</li>" + "</div>";
+  $('ul').append(users); 
+}
+ }); 
+ }
+});
+});
+  
+$("#online").click(function(){
+  $(".inactive").hide();
+  $(".unavailable").hide();
+  $(".active").show();
+});
+  
+$("#offline").click(function(){
+  $(".active").hide();
+  $(".inactive").show();
+  $(".unavailable").show();
+});
+  
+$("#showAll").click(function(){
+  $(".active").show();
+  $(".inactive").show();
+  $(".unavailable").show();
+});
+});              
