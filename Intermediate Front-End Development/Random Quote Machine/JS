@@ -1,0 +1,23 @@
+var forismaticAPI = "http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?";
+var twitterUrl ="https://twitter.com/intent/tweet?text=";
+
+$(document).ready(function(){
+  getQuote();
+});
+
+$("#getNewQuote").on('click', function() {
+  getQuote();
+});
+
+function getQuote () {
+  $.getJSON(forismaticAPI, function (result) {
+   $(".quote").text(result.quoteText);
+    if (result.quoteAuthor) {
+    $(".author").text("~" + result.quoteAuthor + "~");
+     } else 
+$(".author").text("~" +"Anonymous"+ "~");
+
+$(".twitter").attr("href", 
+  twitterUrl + result.quoteText + "~" + result.quoteAuthor + "~");
+  });
+}
