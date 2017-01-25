@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+
+#getNewQuote {
+  margin-top: 15px;
+  font-size: 20px;
+  border-radius: 300px;
+  background-color: #D84638;
+  border-color: #D84638;
+  margin-top: 20px;
+  padding-right: 50px;
+  padding-left: 50px;
+  color: #FFFFFF;
+
+}
+
+#getNewQuote:hover{
+  border-color: #FFFFFF;
+}
+
+.btn:focus,.btn:active {
+   outline: none !important;
+}
+
+.quote {
+  color: #FFFFFF;
+  margin-top: 15px;
+  font-family: 'Josefin Sans';
+  font-size: 40px;
+  font-weight: bold;
+  padding-right: 10%;
+  padding-left: 10%;
+  text-shadow: 1px 1px #000000;
+    
+}
+
+.author{
+   color: #FFFFFF;
+  margin-top: 15px;
+  font-family: 'Josefin Sans';
+  font-size: 28px;
+  font-weight: bold; 
+  text-shadow: 1px 1px #000000;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right bottom, #005D5E 50%, #008384 50%);
+}
+
+.twitter {
+  margin-top: 20px;
+  background-color: #D84638 !important;
+  border-color: #D84638;
+  border-radius: 100%; 
+}
+
+.btn-primary:hover, .btn-primary:active  {
+  background-color: #D84638;
+  border-color: #FFFFFF !important;
+}
+.btn-primary:visited  {
+  background-color: #D84638; 
+  border-color: #D84638 !important;
+}
+
+.fa {
+  color: #FFFFFF;
+}
+
+p {
+ padding-left: 10px;
+ font-size: 20px;
+ color: #FFFFFF;
+ display: inline-block;
+ font-family: 'Josefin Sans';
+ font-weight: bold;
+}
+
