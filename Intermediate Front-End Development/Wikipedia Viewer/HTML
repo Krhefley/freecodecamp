@@ -1,0 +1,21 @@
+<div class="container"> 
+ <div class="row">
+  <div class="col-md-offset-2 col-md-4 col-sm-12 col-xs-12 text-center">
+       <label for="input" class="col-form-label text-center">Search Wikipedia</label>
+       <input class="form-control" type="text" id="input">
+   <span id="clear" class="glyphicon glyphicon-remove-circle"></span></input>
+  </div><!--col-->
+  <div class="col-md-4 col-sm-12 col-xs-12 text-center">
+      <p>Click for a random article</p>
+      <a href="https://en.wikipedia.org/wiki/Special:Random" class="btn btn-primary random" target="_blank">
+      <i class="fa fa-wikipedia-w fa-1x" aria-hidden="true"></i></a>
+  </div><!--col-->
+ </div><!--row-->
+ <div class="row">
+  <div class="col-md-12">
+    <div class="resultset">
+      <div class="results"></div>
+      </div><!--resulset-->
+    </div><!--col-->
+  </div><!--row-->
+</div><!--containter-->
