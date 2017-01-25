@@ -1,0 +1,45 @@
+$(document).ready(function() {
+var latitude;
+var longitude;
+var temperature;
+var temperatureC; 
+
+
+
+//Get Location
+  $.getJSON('http://ip-api.com/json/?callback=?', function(data) {
+  latitude = data.lat;
+  longitude = data.lon;
+  city= data.city;
+  state= data.region 
+  getWeather(latitude, longitude);
+});
+//Get Weather
+function getWeather (latitude, longitude) {
+ $.getJSON("http://api.openweathermap.org/data/2.5/weather?" + "lat=" + latitude + "&" + "lon=" + longitude +  "&units=Imperial" + "&APPID=5deabc6849391002042bf422b8252c65", function (weather) {
+temperature=Math.round(weather.main.temp);
+temperatureC=Math.round((weather.main.temp-32)*.5556);
+$(".conditions").html(weather.weather[0].description);
+ 
+$(".humidity").html("HUMIDITY " + weather.main.humidity + "%");  
+$(".wind").html("Wind Speed" + " " + weather.wind.speed + " " + "mph");
+$(".temp").text(temperature + "°F");
+$(".convert").text("°C");
+$(".location").html(city+ "," + " " + state); 
+var code=weather.weather[0].id;
+$("i").addClass("wi wi-owm-" + code);
+});                                   
+}  
+
+
+//Button Toggle
+$(".convert").click(function() {
+    if ($(".temp").text() == temperature + "°F") {
+$(".convert").text("°F"); 
+$(".temp").text(temperatureC + "°C");
+    } else {
+      $(".temp").text(temperature + "°F"); 
+  $(".convert").text("°C");
+    }
+  });
+}); 
