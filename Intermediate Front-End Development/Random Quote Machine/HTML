@@ -1,0 +1,24 @@
+<div class="container-fluid">
+  <div class = "row text-center">
+    <h2></h2>
+  </div>
+  <div class="col-md-12">   
+    <a class="btn btn-primary twitter" target="_blank">
+     <i class="fa fa-twitter fa-4x" aria-hidden="true"></i></a>
+<p>TWEET THIS QUOTE</p>
+  </div>
+  <div class = "row text-center">
+    <div class = "col-md-12 text-center quote">  
+    </div>
+    <div class = "col-md-12 text center author">  
+    </div>
+ <div class="container"   
+ <div class = "row text-center">
+    <div class = "col-md-12">
+      <button id = "getNewQuote" class = "btn btn-lg">
+        CLICK FOR A NEW QUOTE
+      </button> 
+    </div>
+    </div>
+  </div>
+</div>
