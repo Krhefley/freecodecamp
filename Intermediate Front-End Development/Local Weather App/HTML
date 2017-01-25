@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-5 text-center col-md-offset-1 ">
+       <i></i>
+      <div class="location"></div>  
+    </div><!--col-->
+ <div class="col-xs-12 col-sm-12 text-center col-md-offset-right-1 col-md-5">
+   <div class="temp"></div>
+       <button type="button" class="btn btn-primary btn-circle btn-lg convert"></button> 
+   <p class="conditions"></p>
+     <p class="humidity"></p>
+     <p class="wind"></p>
+    </div><!--col-->
+  </div><!--row--> 
+</div><!--container-->
