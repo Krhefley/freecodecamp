@@ -1,0 +1,32 @@
+ <div class="header row">
+    <h1 class="text-center">Jimmy Carter</h1>
+  </div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+    <img         src="http://www.jimmycarterlibrary.gov/documents/photos/jec/nlc18505-26.jpg" class="img-responsive" alt="Jimmy Carter on the phone in the White House">Jimmy Carter in the White House</img>
+  </div>
+  <div class=".col-md-4">
+    <p>Most people know Jimmy Carter as a former United States President. He was president from 1977-1981. He had a tumultuous tenure dealing with the Iran Hostage Crisis, US Energy Crisis, and the Soviet Invasion of Afghanistan as well as an American economy that had descended into 'stagflation'. He lost the presidential election to Ronald Reagan in 1980.</p>
+  </div>
+</div>
+<div class="row" style="margin-top:10px;">
+  <div class="col-md-4">
+    <p>Other people know Jimmy Carter from his work with Habitat for Humanity. Jimmy Carter began his Carter Work Projects with Habitat for Humanity in 1986. He has taken the work project to over 14 countries and has helped 3,800 families (wikipedia).</p>
+  </div>
+  <div class="col-md-8">
+    <img src="http://cdn.history.com/sites/2/2013/12/carter_habitat-P.jpeg" class="img-responsive" alt="Jimmy and Rosalyn Carter working on constructino of a Habitat house">
+  </div>
+</div>  
+<div class="row">
+  <div class="col-md-8">
+    <img src=https://upload.wikimedia.org/wikipedia/en/5/5c/The_Carter_Center.jpg class="img-responsive" alt="Carter Center logo"></img>
+  </div>  
+<div class="col-md-4">
+  <p>However, many people may not know about Jimmy Carter's Foundation, The Carter Center. It works heavily in building democracy, mediating conflict and eridicating diseases. The Carter Center has led the fight against guinea worm a painful, waterborne disease. As of today the disease has reached 99% eradication worldwide.</p>
+  </div>  
+</div>
+</div>
+<div class="row footer">
+  <p class="text-center" style="color: white;"> To learn more about the Carter Center and it's programs, you can visit their <a href="https://www.cartercenter.org/" target="_blank">site</a>.<p>
+</div>    
