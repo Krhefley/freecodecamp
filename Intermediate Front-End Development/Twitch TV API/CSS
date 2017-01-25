@@ -1,0 +1,105 @@
+@import url(http://fonts.googleapis.com/css?family=Anton);
+@import
+url(http://fonts.googleapis.com/css?family=Arimo);
+
+body {
+  background-color: #272E36;
+}
+
+
+
+.title {
+  color: #FFF;
+  font-family: 'Anton';
+  font-size: 50px;
+}
+
+.text-center {
+padding-bottom: 8px;
+}
+
+.btn-primary {
+  font-family: Anton;
+  font-weight: normal;
+  font-size: 17px;
+  background-color: transparent;
+  border-color: #FFF;
+ 
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+  background-color: #FFF;
+  color: #272E36;
+}
+
+.active {
+ background-color: #69a469;
+}
+
+
+.inactive {
+  background-color: #c33a3a;
+}
+
+.unavailable {
+background-color: #272E36;    
+}
+
+h3 {
+color: white;
+font-family: 'Anton';
+font-size: 18px;
+}
+
+@media screen and (min-width: 800px) {
+.list {
+border: 1px white solid;
+border-radius: 10px;
+margin-left: auto;
+margin-right: auto;
+width: 70%;
+}
+}
+
+@media screen and (max-width: 799px) {
+   .list {
+    border: 1px white solid;
+border-radius: 10px;
+margin-left: 0px;
+margin-right: 0px;
+padding-left: 0px;
+ width: 100%;
+    }
+} 
+
+ul {
+padding: 0px;
+}
+
+
+.fa {
+font-size: 80px;  
+color: white;
+}
+
+li {
+margin-top: 10px;
+list-style-type: none;
+}
+
+.logo {
+ height: 80px;
+ width: 80px;
+ border-radius: 100px;
+};
+
+.name {
+color: white;
+font-family: 'Anton';
+padding-top: 100px;
+}
+
+
+
+
+
