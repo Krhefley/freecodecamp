@@ -1,0 +1,41 @@
+$(function() {
+ var input;
+  
+$("#clear").click(function(){
+  $("input").val('');
+});
+ 
+  
+   //search input
+$("input").on("keydown",function search(userInput) {
+    if(userInput.keyCode == 13) {
+     input= ($(this).val());
+   
+      
+ $.ajax({
+  url:"https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=="
+ + input + "&format=json",
+  dataType: 'jsonp',
+  type: 'get',
+  success: getDisplay,
+}); 
+function getDisplay(data) {
+   $(".results").html(""); 
+  if (data.query.searchinfo.totalhits == 0) {
+  $(".results").text('Did you mean' + " " + data.query.searchinfo.suggestion + "?");
+  } else {
+$(data.query.search).each(function(index, value) {   
+  var result="";
+ url='https://en.wikipedia.org/wiki/';
+  result = "<div class='resultset'>" + '<a href=' + url +  encodeURI(value.title) + ' + target="_blank">'  
+   + "<h2 class='title'>" + value.title + "</h2>"  
+   + "<div class='snippet'>" + value.snippet + "</div>" + "</a>" + "</div>"; 
+  $(".results").append(result);
+  });
+}   
+}
+ }      
+});
+});
+  
+  
