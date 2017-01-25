@@ -1,0 +1,100 @@
+$(function() {
+var workLength = 25;
+var breakLength = 5;
+var pause = false;
+var seconds = 0;
+var minutes = 25;
+var counter; 
+  
+ //Audio 
+var audio = new Audio ('http://soundbible.com/grab.php?id=1815&type=mp3');
+  
+function gong() {
+   audio.play();
+} 
+
+
+ $('.timer').html(minutes + ":00");
+  
+ function countdown(){
+    
+    
+    if(minutes === 0 && seconds === 1){
+      audio.play();
+      }
+   
+   if(minutes === 0 && seconds === 0){
+      if($('.title').text() === 'Work'){
+        $('.title').text('Break');
+        minutes = breakLength;
+        $('.timer').html(minutes + ":0" + seconds);
+      }
+      
+      else if($('.title').text() === 'Break'){
+        $('.title').text('Work');
+        minutes = workLength;
+        $('.timer').html(minutes + ":0" + seconds);
+      }
+   }
+   else{
+      if(seconds === 0){seconds = 60; minutes--}
+      seconds--;
+      if(seconds < 10){$('.timer').html(minutes + ":0" + seconds);}
+      else{
+      $('.timer').html(minutes + ":" + seconds);
+      }
+   }
+  }
+  
+
+  $('#minusBreak').click(function(){
+    if(pause === false){
+    if(breakLength > 1){breakLength--; $("#breakLength").html(breakLength); $('.title').text('Work'); $(".timer").html(workLength + ":00");
+       seconds = 0;
+       minutes = workLength;}
+    }
+  });
+  $('#plusBreak').click(function(){
+    if(pause === false){
+    breakLength++; $("#breakLength").html(breakLength);
+    $('.title').text('Work');
+    $(".timer").html(workLength + ":00");
+       seconds = 0;
+       minutes = workLength;
+    }
+  });
+   $('#minusWork').click(function(){
+     if(pause === false){
+    if(workLength > 1){workLength--; $("#workLength").html(workLength); $(".timer").html(workLength + ":00");        $('.title').text('Work');
+}
+       seconds = 0;
+       minutes = workLength;
+     }
+  });
+  $('#plusWork').click(function(){
+    if(pause === false){
+    workLength++; $("#workLength").html(workLength);
+      $(".timer").html(workLength + ":00");
+      $('.title').text('Work');
+      seconds = 0;
+      minutes = workLength;
+    }
+  });
+ 
+  
+  $('#start').click(function(){
+    
+   if(pause === false){
+     counter = setInterval(countdown, 1000);
+     $('#start').text('Pause');
+     pause = true;
+   }
+   else if(pause === true){
+     clearInterval(counter);
+     $('#start').text('Start');
+     pause = false;
+   }
+  });
+
+  
+});
